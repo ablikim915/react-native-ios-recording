@@ -1,4 +1,5 @@
 {
   "name": "myRnTest",
-  "displayName": "myRnTest"
+  "displayName": "myRnTest",
+  "supportsDocumentBrowser": true
 }

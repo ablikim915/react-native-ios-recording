@@ -28,4 +28,28 @@
 #endif
 }
 
+// - (void)applicationDidEnterBackground:(UIApplication *)application
+// {
+//   __block UIBackgroundTaskIdentifier bgTask;
+//   bgTask = [application beginBackgroundTaskWithExpirationHandler:^{
+//     [application endBackgroundTask:bgTask];
+//     bgTask = UIBackgroundTaskInvalid;
+//   }];
+
+//   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//     while (1) {
+//       if ([[UIApplication sharedApplication] backgroundTimeRemaining] < 1.0) {
+//         break;
+//       }
+//       [NSThread sleepForTimeInterval:1];
+//     }
+
+//     if (bgTask != UIBackgroundTaskInvalid)
+//     {
+//       [application endBackgroundTask:bgTask];
+//       bgTask = UIBackgroundTaskInvalid;
+//     }
+//   });
+// }
+
 @end
